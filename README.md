@@ -1,17 +1,4 @@
-# AI CV Customization & Job Automation System
 
-<table>
-  <tr>
-    <td>
-      <img src="assets/thumbnail1.png" width="500"/>
-    </td>
-    <td style="vertical-align: middle; padding-left: 20px;">
-      <a href="https://youtu.be/1VJQv0_gJNE" target="_blank">
-        ▶ Watch on YouTube
-      </a>
-    </td>
-  </tr>
-</table>
 
 This repository contains a full-stack application for tailoring CVs with AI, analyzing job descriptions, generating cover letters and connection messages, and automating LinkedIn job workflows.
 
