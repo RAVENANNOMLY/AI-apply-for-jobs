@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+          @page {
+            size: A4;
+            margin: 5mm 5mm;
+          }
+
+          body {
+            font-family: "Helvetica", "Arial", sans-serif;
+            color: #222;
+            line-height: 2.00;
+            font-size: 12.5pt;
+          }
+
+          .header {
+            border-left: 4px solid #2f3e46;
+            padding-left: 12px;
+            margin-bottom: 18px;
+          }
+
+          .name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 2px;
+          }
+
+          .meta {
+            color: #4b5563;
+            font-size: 10.8pt;
+            margin-bottom: 1px;
+          }
+
+          .meta a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+
+      .meta a:hover {
+        text-decoration: underline;
+      }
+
+          .role {
+            margin-top: 4px;
+            font-weight: 600;
+            color: #374151;
+            font-size: 11pt;
+            gap: 8px;
+          }
+
+          .divider {
+            margin: 14px 0;
+            border-top: 1px solid #e5e7eb;
+          }
+
+          .content {
+        text-align: justify;
+        <!-- white-space: pre-wrap; -->
+      }
+
+          .content p {
+            margin: 0 0 15px 0;
+          }
+
+          .footer {
+            margin-top: 24px;
+            font-size: 11.5pt;
+          }
+
+          .signature {
+            margin-top: 8px;
+            font-weight: 600;
+          }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="name">{{name}}</div>
+      <div class="meta">{{email}}</div>
+      <div class="meta">{{phone}}</div>
+      {{#website}}<span class="contact-item"
+        ><a href="{{website}}">Website</a></span
+      >{{/website}}
+      <div class="role">{{job_title}} • {{company}}</div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="content">{{{cover_letter}}}</div>
+  </body>
+</html>

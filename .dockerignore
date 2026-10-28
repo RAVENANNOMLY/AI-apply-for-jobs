@@ -1,0 +1,11 @@
+.git
+.venv
+__pycache__
+*.pyc
+*.ipynb
+node_modules
+dist
+playwright_logs
+cv_editing_react_app/backend/.env
+cv_editing_react_app/backend/rendered_pdf
+cv_editing_react_app/job_listings

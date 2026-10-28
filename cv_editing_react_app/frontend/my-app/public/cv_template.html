@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV - {{name}}</title>
+
+    <style>
+      @page {
+        size: A4;
+        margin: 1mm;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #2c3e50;
+        font-size: 10pt;
+        line-height: 1.35;
+      }
+
+      /* LINKS */
+      a {
+        color: #1a5276;
+        text-decoration: none;
+      }
+
+      /* HEADER */
+      .header {
+        text-align: center;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #2c3e50;
+      }
+
+      .name {
+        font-size: 18pt;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .headline {
+        font-size: 10pt;
+        font-weight: 600;
+        color: #1a5276;
+        margin-top: 2px;
+      }
+
+      .contact {
+        margin-top: 6px;
+        font-size: 9pt;
+      }
+
+      .contact span {
+        display: inline-block;
+        margin: 0 4px;
+      }
+
+      /* SECTIONS */
+      .section {
+        margin-top: 10px;
+      }
+
+      .section-title {
+        font-size: 11.5pt;
+        font-weight: 700;
+        border-bottom: 1px solid #d0d0d0;
+        margin-bottom: 5px;
+        padding-bottom: 2px;
+      }
+
+      /* ENTRY */
+      .entry ul li p,
+      .entry ul li div {
+        margin: 0;
+        padding: 10;
+        display: inline;
+      }
+      .entry {
+        margin-bottom: 5px;
+      }
+
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 10pt;
+      }
+
+      .entry-subtitle {
+        font-style: italic;
+        color: #1a5276;
+        font-size: 9.5pt;
+        margin-bottom: 3px;
+      }
+
+      .publications-list {
+        margin: 0;
+        padding-left: 15px;
+      }
+
+      .publications-list li {
+        margin: 0 0 5px 0;
+        padding: 0;
+        line-height: 1.25;
+      }
+
+      .publications-list li:last-child {
+        margin-bottom: 0;
+      }
+
+      /* =======================
+   LIST FIX (IMPORTANT)
+   ======================= */
+
+      ul {
+        margin: 0;
+        padding-left: 15px;
+      }
+
+      /* remove ALL spacing between bullets */
+      li {
+        margin: 0px;
+        padding: 5px;
+        line-height: 1.25;
+      }
+
+      /* if multiple ULs exist inside same entry → remove gap */
+      .entry ul {
+        margin: 0;
+      }
+
+      .entry ul + ul {
+        margin-top: 0;
+      }
+
+      /* OPTIONAL: tighter grouping for CV style */
+      .bullet-group ul {
+        margin: 0;
+        padding-left: 15px;
+      }
+
+      .bullet-group ul + ul {
+        margin-top: 0;
+      }
+
+      /* TABLE */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9.5pt;
+      }
+
+      td {
+        padding: 2px 4px;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      {{#name}}
+      <div class="name">{{name}}</div>
+      {{/name}} {{#headline}}
+      <div class="headline">{{headline}}</div>
+      {{/headline}}
+
+      <div class="contact">
+        {{#location}}<span>{{location}}</span>{{/location}}
+        {{#phone}}<span>{{phone}}</span>{{/phone}} {{#email}}
+        <span><a href="mailto:{{email}}">{{email}}</a></span>
+        {{/email}} {{#linkedin}}
+        <span><a href="{{linkedin}}">LinkedIn</a></span>
+        {{/linkedin}} {{#github}}
+        <span><a href="{{github}}">GitHub</a></span>
+        {{/github}} {{#website}}
+        <span><a href="{{website}}">Website</a></span>
+        {{/website}} {{#youtube}}
+        <span><a href="{{youtube}}">YouTube</a></span>
+        {{/youtube}}
+      </div>
+    </div>
+
+    <!-- SUMMARY -->
+    {{#summary}}
+    <div class="section">
+      <div class="section-title">Summary</div>
+      <div>{{{summary}}}</div>
+    </div>
+    {{/summary}}
+
+    <!-- EDUCATION -->
+    {{#education.length}}
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      {{#education}}
+      <div class="entry">
+        <div class="entry-header">
+          <div>{{degree}} in {{area}}</div>
+          <div>{{start_date}} – {{end_date}}</div>
+        </div>
+        <div class="entry-subtitle">{{institution}} | {{location}}</div>
+      </div>
+      {{/education}}
+    </div>
+    {{/education.length}}
+
+    <!-- EXPERIENCE -->
+    {{#experience.length}}
+    <div class="section">
+      <div class="section-title">Experience</div>
+
+      {{#experience}}
+      <div class="entry">
+        <div class="entry-header">
+          <div>{{position}}</div>
+          <div>{{start_date}} – {{end_date}}</div>
+        </div>
+
+        <div class="entry-subtitle">{{company}} | {{location}}</div>
+
+        <!-- IMPORTANT: single UL preferred -->
+        <ul>
+          {{#highlights}}
+          <li>{{{.}}}</li>
+          {{/highlights}}
+        </ul>
+      </div>
+      {{/experience}}
+    </div>
+    {{/experience.length}}
+
+    <!-- PROJECTS -->
+    {{#projects.length}}
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      {{#projects}}
+      <div class="entry">
+        <div class="entry-header">
+          <div>{{name}} {{#url}} <a href="{{url}}">[link]</a>{{/url}}</div>
+        </div>
+
+        <ul>
+          {{#highlights}}
+          <li>{{{.}}}</li>
+          {{/highlights}}
+        </ul>
+      </div>
+      {{/projects}}
+    </div>
+    {{/projects.length}}
+
+    <!-- PUBLICATIONS -->
+    {{#publications.length}}
+    <div class="section">
+      <div class="section-title">
+        Publications {{#google_scholar}}
+        <span style="float: right; font-size: 9pt; font-weight: normal">
+          <a href="{{google_scholar}}">Google Scholar</a>
+        </span>
+        {{/google_scholar}}
+      </div>
+
+      <ul class="publications-list">
+        {{#publications}}
+        <li>
+          <div><b>{{title}}</b></div>
+          <div style="font-size: 9pt">
+            {{journal}} | {{date}} {{#doi}} | <a href="{{doi}}">DOI</a>{{/doi}}
+          </div>
+        </li>
+        {{/publications}}
+      </ul>
+    </div>
+    {{/publications.length}}
+
+    <!-- SKILLS -->
+    {{#skills.length}}
+    <div class="section">
+      <div class="section-title">Skills</div>
+
+      <table>
+        {{#skills}}
+        <tr>
+          <td><b>{{label}}</b></td>
+          <td>{{details}}</td>
+        </tr>
+        {{/skills}}
+      </table>
+    </div>
+    {{/skills.length}}
+  </body>
+</html>

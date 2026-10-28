@@ -1,0 +1,128 @@
+{
+  "name": "Balyogi Mohan Dash",
+  "headline": "Machine Learning Engineer (PhD)",
+  "location": "Odisha, India",
+  "email": "mohan.dash.phd@gmail.com",
+  "phone": "+91 8908764802",
+  "website": "https://mohan696matlab.github.io/",
+  "youtube": "",
+  "linkedin": "https://www.linkedin.com/in/balyogi-mohan-dash/",
+  "github": "",
+  "google_scholar": "https://scholar.google.com/citations?user=jzcIElIAAAAJ",
+  "summary": "I have built production-grade AI systems across computer vision and generative AI for **Renault, Thales, SNCF**. At Buawei I built a **GenAI defect synthesis pipeline** that noticeably improved defect classification and cut down manual labeling work, and I also developed **LLM-powered agentic workflows** for healthcare automation. My PhD research was on self-supervised learning and industrial fault diagnosis. Outside of that I post Educational AI content on my **YouTube Channel**.",
+  "education": [
+    {
+      "institution": "University of Lille, CRIStAL Lab",
+      "area": "Computer Science",
+      "degree": "PhD",
+      "start_date": "2021-10",
+      "end_date": "2024-03",
+      "location": "Lille, France"
+    },
+    {
+      "institution": "Indian Institute of Technology (IIT) Kharagpur",
+      "area": "Mechanical System Design",
+      "degree": "Master of Technology",
+      "start_date": "2019-07",
+      "end_date": "2021-07",
+      "location": "Kharagpur, India",
+      "gpa": "9.2/10"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Buawei",
+      "position": "Machine Learning Research Engineer",
+      "start_date": "2024-03",
+      "end_date": "2026-07",
+      "location": "Lille, France",
+      "highlights": [
+        "Reduced **model training time by 90%** on a production visual anomaly detection system by developing a **Transformer-based vision encoder** and integrating a **vector database** for fast similarity retrieval during inference. Deployed end-to-end with **PyTorch, OpenCV, and Docker**.",
+        "Solved a critical **scarce-label bottleneck** by fine-tuning **Transformer-based diffusion models** with **LoRA** and quantization for efficient domain adaptation. Integrated **ControlNet** and **IP-Adapter** to synthesize realistic industrial defect images, improving downstream production classification accuracy by **34%**.",
+        "Increased **tyre identification number recognition accuracy by 16%** by fine-tuning a **Transformer-based OCR model (TrOCR)** for industrial inspection. Built a reproducible training pipeline with **Optuna-based hyperparameter optimization** and deployed the system to **production**, ensuring reliable performance on edge cases."
+      ]
+    },
+    {
+      "company": "Stealth AI Startup",
+      "position": "Freelance AI Engineer (Part-time)",
+      "start_date": "2025-10",
+      "end_date": "2026-05",
+      "location": "Remote",
+      "highlights": [
+        "Built an on-premise healthcare AI platform by fine-tuning German ASR models and developing an LLM-powered agentic pipeline using LangChain, LangGraph, and tool calling for automated clinical transcription and EHR updates.",
+        "Developed production-ready AI services using FastAPI, SQL, Docker, and PyTorch, integrating RAG-ready architecture, workflow orchestration, and scalable inference pipelines. Applied reinforcement learning-based training (TPU) and added robust evaluation frameworks at both end-to-end and component levels, reducing system errors by 36%."
+      ]
+    },
+    {
+      "company": "University of Lille",
+      "position": "PhD Researcher",
+      "start_date": "2021-10",
+      "end_date": "2024-03",
+      "location": "Lille, France",
+      "highlights": [
+        "First-authored **5 publications** (2 Q1 journals, 1 Q2 journal, 2 top-tier conferences) on **self-supervised learning** and industrial fault diagnosis, while leading a research-to-deployment collaboration with **SNCF** to develop a physics-informed AI system for railway track monitoring that reduced false alarms and unnecessary safety inspections."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI Job Application Automation System",
+      "url": "https://github.com/mohan696matlab/AI_CV_Customization",
+      "highlights": [
+        "Engineered a local LLM application using **Ollama**, **LangChain**, and **LangGraph** for resume customization and cover letter generation, implementing fallback workflows, and **structured output validation** to ensure reliable generation while preserving factual consistency.",
+        "Implemented **LLM observability** and **evaluation pipelines** to monitor model latency, response quality, structured output failures, and generation performance across different models, enabling systematic optimization of AI workflows."
+      ]
+    },
+    {
+      "name": "YouTube Course on Diffusion-based Generative AI",
+      "url": "https://youtube.com/playlist?list=PLoSULBSCtofearln-pGND44nr69FE9eIM",
+      "highlights": [
+        "Designed and published a full hands-on curriculum covering **diffusion models**, **Transformers**, and practical **PyTorch** and **Hugging Face** implementation, made freely available to the global machine learning community.",
+        "Grew a technical audience of **3,000** subscribers and 276,370+ views, demonstrating the ability to clearly communicate complex machine learning research and implementation details."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Prior knowledge-infused Self-Supervised Learning and explainable AI for Fault Detection and Isolation in PEM electrolyzers",
+      "journal": "Neurocomputing",
+      "doi": "https://doi.org/10.1016/j.neucom.2024.127871",
+      "date": "2024-05"
+    },
+    {
+      "title": "Bond Graph-CNN based hybrid fault diagnosis with minimum labeled data",
+      "journal": "Engineering Applications of Artificial Intelligence",
+      "doi": "https://doi.org/10.1016/j.engappai.2023.107734",
+      "date": "2024-01"
+    },
+    {
+      "title": "Failure prognosis of components with unlike degradation trends: A data-driven approach",
+      "journal": "Proceedings of the Institution of Mechanical Engineers, Part O",
+      "doi": "https://doi.org/10.1177/1748006X221119301",
+      "date": "2022-08"
+    },
+    {
+      "title": "FDI-X: An occlusion-based approach for explainable fault diagnosis",
+      "journal": "ICCAD",
+      "doi": "https://doi.org/10.1109/ICCAD57653.2023.10152392",
+      "date": "2023-07"
+    },
+    {
+      "title": "A comparison of model-based and machine learning techniques for fault diagnosis",
+      "journal": "MEPCON",
+      "doi": "https://doi.org/10.1109/MEPCON55441.2022.10021712",
+      "date": "2022-12"
+    }
+  ],
+  "skills": [
+    {
+      "label": "Tech Stack",
+      "details": "Python, SQL, PyTorch, TensorFlow, Transformers, Diffusers, LangChain, LangGraph, VectorDB, Docker, REST APIs, CI/CD, Git, scikit learn, Pandas, Numpy"
+    },
+    {
+      "label": "Languages",
+      "details": "English (Bilingual), French (Professional/ B1), Hindi (Native), Odia (Native)"
+    }
+  ],
+  "jobDescription": "I'm supporting an early stage AI company in Paris that is building production AI systems for surgical and clinical workflows.\n\n\nThis is a hands on engineering role for someone who enjoys building real systems around LLMs, orchestration, retrieval, structured outputs, validation, evaluation, and Python backend services.\nThis is not a research only position.\n\n\nThe team needs someone who can take ambiguous AI problems and turn them into reliable workflows that can operate in high trust environments.\n\n\nYou would be working close to product, engineering, and users, helping design and deploy AI systems that are robust, observable, and useful in real clinical settings.\n\n\nThe role would suit someone who has experience with:\n\n\n• Production LLM systems\n• Agentic workflows\n• RAG and retrieval systems\n• Python backend engineering\n• Structured outputs and validation\n• Evaluation and benchmarking\n• Observability and reliability\n\n\n• Multimodal AI, VLMs, video, healthcare, or safety critical systems would be a strong plus\n\n\nThe company is moving quickly, so this would suit someone who enjoys ownership, fast iteration, and building in an early stage environment."
+}

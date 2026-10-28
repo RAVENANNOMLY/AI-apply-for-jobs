@@ -1,0 +1,43 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: cv_editing_react_app/backend/Dockerfile
+    environment:
+      DATABASE_URL: sqlite:////data/jobs.db
+      APIFY_API_KEY: ${APIFY_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      HOST_ADDRESS: ${HOST_ADDRESS:-http://ollama:11434}
+      MODEL_NAME: ${MODEL_NAME:-GEMINI}
+      password: ${LINKEDIN_PASSWORD:-}
+      username: ${LINKEDIN_USERNAME:-}
+    volumes:
+      - cv-data:/data
+      - rendered-pdf:/app/cv_editing_react_app/backend/rendered_pdf
+      - job-listings:/app/cv_editing_react_app/job_listings
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./cv_editing_react_app/frontend/my-app
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: /api
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+
+
+volumes:
+  cv-data:
+  rendered-pdf:
+  job-listings:

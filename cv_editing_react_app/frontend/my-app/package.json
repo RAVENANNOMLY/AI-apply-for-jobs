@@ -1,0 +1,40 @@
+{
+  "name": "my-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.17.0",
+    "bootstrap": "^5.3.8",
+    "html2pdf.js": "^0.14.0",
+    "marked": "^18.0.5",
+    "mustache": "^4.2.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.6",
+    "react-bootstrap": "^2.10.10",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^19.2.6",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.5.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.4",
+    "sass": "^1.101.0",
+    "vite": "^8.0.12"
+  }
+}

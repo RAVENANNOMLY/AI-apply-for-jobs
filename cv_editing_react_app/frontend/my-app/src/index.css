@@ -1,0 +1,25 @@
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+.my-text {
+  color: var(--bs-body-color);
+}
+.my-muted {
+  color: var(--bs-secondary-color);
+}
+.card {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: var(--bs-border-color);
+}
+
+.preview-content {
+  color: var(--bs-body-color);
+}
+
+.preview-content p,
+.preview-content span,
+.preview-content div {
+  color: inherit;
+}

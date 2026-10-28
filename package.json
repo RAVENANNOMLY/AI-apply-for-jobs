@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "backend": "uv run --directory cv_editing_react_app/backend uvicorn api.server:app --port 8000",
+    "frontend": "npm --prefix cv_editing_react_app/frontend/my-app run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "Balyogi Mohan Dash",
+  "headline": "Machine Learning Engineer (PhD)",
+  "location": "Lille, France",
+  "email": "mohandash96@gmail.com",
+  "phone": "+33 7 52 96 02 12",
+  "website": "",
+  "youtube": "https://www.youtube.com/@Mohankumardash",
+  "linkedin": "https://www.linkedin.com/in/balyogi-mohan-dash/",
+  "github": "https://github.com/mohan696matlab",
+  "google_scholar": "https://scholar.google.com/citations?user=jzcIElIAAAAJ",
+  "summary": "I build production AI systems for industrial quality inspection. At Buawei, I developed a visual anomaly detection platform that reduced model training time by 90% and created a GenAI-based defect synthesis pipeline that improved classification accuracy by 34%, replacing weeks of manual labeling. During my PhD, I published two peer-reviewed papers on self-supervised fault diagnosis. I write clean, production-ready Python code and enjoy sharing my knowledge, which has helped me grow an audience of more than 3,000 subscribers on YouTube.",
+  "education": [
+    {
+      "institution": "University of Lille, CRIStAL Lab",
+      "area": "Computer Science",
+      "degree": "PhD",
+      "start_date": "2021-10",
+      "end_date": "2024-03",
+      "location": "Lille, France"
+    },
+    {
+      "institution": "Indian Institute of Technology (IIT) Kharagpur",
+      "area": "Mechanical System Design",
+      "degree": "Master of Technology",
+      "start_date": "2019-07",
+      "end_date": "2021-07",
+      "location": "Kharagpur, India",
+      "gpa": "9.2/10"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Buawei",
+      "position": "Machine Learning Research Engineer",
+      "start_date": "2024-03",
+      "end_date": "present",
+      "location": "Lille, France",
+      "highlights": [
+        "Reduced model training time by 90% on a production visual anomaly detection system for industrial inspection — cutting iteration cycles from weeks to days — by engineering a FAISS-backed retrieval architecture deployed end-to-end with PyTorch, OpenCV, and Docker.",
+        "Solved a critical scarce-label bottleneck by fine-tuning Transformer-based diffusion models using Diffusers, ControlNet, and IP-Adapter to generate synthetic images for rare industrial defect classes that were previously impossible to collect at scale, improving downstream production classification accuracy by 34%.",
+        "Cut misclassification rates by 85% across automobile inspection lines by developing and deploying a Vision-Language Model (VLM) using instruction tuning, LoRA, and quantization, enabling zero-shot generalization to new factory environments and eliminating the need for per-site retraining while reducing maintenance overhead."
+      ]
+    },
+    {
+      "company": "University of Lille",
+      "position": "PhD Researcher",
+      "start_date": "2021-10",
+      "end_date": "2024-03",
+      "location": "Lille, France",
+      "highlights": [
+        "First-authored 5 publications — including two Q1 journals, one Q2 journal, and two top-tier international conferences — focused on self-supervised learning and fault diagnosis for industrial systems.",
+        "Led a research-to-deployment collaboration with SNCF to develop a physics-informed AI system for railway track monitoring, reducing false alarms on safety-critical infrastructure and lowering unnecessary inspection callouts and operational costs.",
+        "Improved remaining useful life (RUL) prediction accuracy by 37% for industrial components using deep learning, enabling earlier maintenance interventions and reducing unplanned downtime risk.",
+        "Reduced labeled data requirements by 55% through a hybrid self-supervised fault diagnosis framework, enabling reliable ML-based diagnosis in real-world industrial settings with scarce annotated failure data."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI Automation in Healthcare",
+      "highlights": [
+        "Fine-tuned German ASR models and built an on-premise LLM tool-calling pipeline for automated clinical transcription and patient record updates, ensuring strict data sovereignty compliance for hospital environments.",
+        "Orchestrated multi-step clinical workflows using LangChain and LangGraph, integrating Postgres for structured clinical data storage and FastAPI for production-grade serving.",
+        "Designed safety-critical deployment safeguards including deterministic fallback mechanisms, structured output validation, and human-in-the-loop review gates for high-risk clinical record modifications."
+      ]
+    },
+    {
+      "name": "YouTube Course on Diffusion-based Generative AI",
+      "url": "https://youtube.com/playlist?list=PLoSULBSCtofearln-pGND44nr69FE9eIM",
+      "highlights": [
+        "Designed and published a full hands-on curriculum covering diffusion models, Transformers, and practical PyTorch and Hugging Face implementation, made freely available to the global machine learning community.",
+        "Grew a technical audience of 3,000 subscribers and 276,370+ views, demonstrating the ability to clearly communicate complex machine learning research and implementation details."
+      ]
+    },
+    {
+      "name": "RAG System for Grounded Spiritual Assistance",
+      "highlights": [
+        "Designed and deployed a production-grade Retrieval-Augmented Generation (RAG) system using LLaMA 3.2, LangChain, LangGraph, and Qdrant to enable context-aware querying over the Bhagavad Gita corpus, with a FastAPI backend, Dockerized deployment, and CI/CD pipelines for scalable serving.",
+        "Improved retrieval relevance and response grounding by optimizing embedding strategies and tuning vector search performance for high-quality semantic retrieval."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Prior knowledge-infused Self-Supervised Learning and explainable AI for Fault Detection and Isolation in PEM electrolyzers",
+      "journal": "Neurocomputing",
+      "doi": "https://doi.org/10.1016/j.neucom.2024.127871",
+      "date": "2024-05"
+    },
+    {
+      "title": "Bond Graph-CNN based hybrid fault diagnosis with minimum labeled data",
+      "journal": "Engineering Applications of Artificial Intelligence",
+      "doi": "https://doi.org/10.1016/j.engappai.2023.107734",
+      "date": "2024-01"
+    },
+    {
+      "title": "Failure prognosis of components with unlike degradation trends: A data-driven approach",
+      "journal": "Proceedings of the Institution of Mechanical Engineers, Part O",
+      "doi": "https://doi.org/10.1177/1748006X221119301",
+      "date": "2022-08"
+    },
+    {
+      "title": "FDI-X: An occlusion-based approach for explainable fault diagnosis",
+      "journal": "ICCAD",
+      "doi": "https://doi.org/10.1109/ICCAD57653.2023.10152392",
+      "date": "2023-07"
+    },
+    {
+      "title": "A comparison of model-based and machine learning techniques for fault diagnosis",
+      "journal": "MEPCON",
+      "doi": "https://doi.org/10.1109/MEPCON55441.2022.10021712",
+      "date": "2022-12"
+    }
+  ],
+  "skills": [
+    {
+      "label": "Technical Skills",
+      "details": "Python, SQL, PyTorch, TensorFlow, Transformers, Diffusers, LangChain, LangGraph, VectorDB, Docker, REST APIs, CI/CD, Git, scikit learn, Pandas, Numpy"
+    },
+    {
+      "label": "Research Areas",
+      "details": "Generative AI, LLMs, Computer Vision, Industrial AI, Fault Diagnosis, Self-Supervised Learning, Model Quantization, RAG systems"
+    },
+    {
+      "label": "Transferable Skills",
+      "details": "Cross-functional collaboration, technical communication, research and development, self-motivation"
+    }
+  ],
+  "jobDescription": "I'm supporting an early stage AI company in Paris that is building production AI systems for surgical and clinical workflows.\n\n\nThis is a hands on engineering role for someone who enjoys building real systems around LLMs, orchestration, retrieval, structured outputs, validation, evaluation, and Python backend services.\nThis is not a research only position.\n\n\nThe team needs someone who can take ambiguous AI problems and turn them into reliable workflows that can operate in high trust environments.\n\n\nYou would be working close to product, engineering, and users, helping design and deploy AI systems that are robust, observable, and useful in real clinical settings.\n\n\nThe role would suit someone who has experience with:\n\n\n• Production LLM systems\n• Agentic workflows\n• RAG and retrieval systems\n• Python backend engineering\n• Structured outputs and validation\n• Evaluation and benchmarking\n• Observability and reliability\n\n\n• Multimodal AI, VLMs, video, healthcare, or safety critical systems would be a strong plus\n\n\nThe company is moving quickly, so this would suit someone who enjoys ownership, fast iteration, and building in an early stage environment."
+}
